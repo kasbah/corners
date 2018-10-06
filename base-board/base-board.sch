@@ -20,7 +20,7 @@ U 1 1 5BB71AB0
 P 2125 3000
 F 0 "J1" H 2180 3317 50  0000 C CNN
 F 1 "Barrel_Jack_MountingPin" H 2180 3226 50  0000 C CNN
-F 2 "KiCad/kicad-footprints/Connector_BarrelJack.pretty:BarrelJack_Horizontal" H 2175 2960 50  0001 C CNN
+F 2 "mcous/kicad-lib/footprints/connect-sm.pretty:CUI-PJ-002AH-SMT_dc-barrel-jack" H 2175 2960 50  0001 C CNN
 F 3 "~" H 2175 2960 50  0001 C CNN
 	1    2125 3000
 	1    0    0    -1  
@@ -115,7 +115,35 @@ F 3 "~" H 2625 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2425 2900 2475 2900
+	2425 2900 2450 2900
 Wire Wire Line
 	2775 2900 3225 2900
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5BB83186
+P 3000 3150
+F 0 "J3" V 3060 3190 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 3151 3190 50  0000 L CNN
+F 2 "KiCad/kicad-footprints/Connector_PinHeader_1.27mm.pretty:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Right" H 3000 3150 50  0001 C CNN
+F 3 "~" H 3000 3150 50  0001 C CNN
+	1    3000 3150
+	0    1    1    0   
+$EndComp
+Text GLabel 2725 3375 1    50   Input ~ 0
+-
+Wire Wire Line
+	2450 3025 2450 2900
+Connection ~ 2450 2900
+Wire Wire Line
+	2450 2900 2475 2900
+Wire Wire Line
+	2450 3025 3000 3025
+Wire Wire Line
+	3000 3025 3000 3350
+Wire Wire Line
+	2725 3375 2725 3425
+Wire Wire Line
+	2725 3425 2900 3425
+Wire Wire Line
+	2900 3425 2900 3350
 $EndSCHEMATC
